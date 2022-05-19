@@ -1,7 +1,7 @@
 import * as qs from 'querystring';
 import axios, {AxiosInstance} from "axios";
 import {origin} from "../utils/blizzard.utils.js";
-import HearthstoneGameData from "./hearthstone/hearthstone.js";
+import HearthstoneGameData from "./hearthstone/game.data.js";
 
 
 export class BlizzardApi {

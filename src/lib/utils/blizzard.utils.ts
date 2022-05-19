@@ -1,9 +1,11 @@
 // @ts-ignore
-import {AxiosInstance} from "axios";
+import { AxiosInstance, AxiosResponse } from "axios";
 
-export async function handleApiCall(apiUrl: string, errorMessage: string, axios: AxiosInstance): Promise<object> {
+export async function handleApiCall(apiUrl: string, errorMessage: string, axios: AxiosInstance, params?: object): Promise<AxiosResponse> {
     try {
-        const response = await axios.get(encodeURI(apiUrl));
+        const response = await axios.get(encodeURI(apiUrl), (params) ? {
+            params: params
+        } : axios.defaults.params);
         return response.data;
     } catch (error) {
         console.log(error);
