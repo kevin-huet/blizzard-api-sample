@@ -1,7 +1,7 @@
 import { AxiosInstance, AxiosResponse } from 'axios';
-import { BlizzardType, WoWMediaSearch } from '../../../types/blizzard.type';
+import { BlizzardType, WoWMediaSearch } from '../../types/blizzard.type';
 import { handleApiCall } from '../../utils/blizzard.utils';
-import { WowMedia, WowTokenIndex } from '../../../types/wow.types';
+import { WowMedia, WowTokenIndex } from '../../types/wow.types';
 
 export class GameData {
     private readonly gameBaseUrlPath: string = '/hearthstone';

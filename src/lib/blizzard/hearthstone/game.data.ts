@@ -7,7 +7,7 @@ import {
     HearthstoneCardSearchResult,
     HearthstoneMetadata,
     HearthstoneSearchCard
-} from '../../../types/hearthstone.types';
+} from '../../types/hearthstone.types';
 
 export default class HearthstoneGameData {
     private readonly gameBaseUrlPath: string = '/hearthstone';
